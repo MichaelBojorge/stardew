@@ -1,0 +1,67 @@
+
+
+table, td , th {
+border: 5px groove rgb(1, 92, 51);
+}
+
+h1{color: antiquewhite;}
+h2{color: antiquewhite;}
+h3{color: antiquewhite;}
+a{color: antiquewhite;}
+p{color: antiquewhite;}
+th{color: rgb(250, 224, 217);}
+li{color: antiquewhite;}
+h5{color: red}
+
+
+
+img.iconos-tabla{
+    height:20px;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+.menu{
+    width: 900px;
+    margin: 100;
+}
+
+
+
+nav{
+    float:  right;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 75px;
+    padding: 25px 0;
+    float: left;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: black;
+    color: brown(162, 17, 17);
+    font-weight: bolder;
+}
+
+nav ul li a::before{
+    display: flow-root;
+    content: '';
+    width: 0%;
+    background: rgb(1, 92, 51);
+    height: 5px;
+    top: 0;
+    position: absolute;
+    transition: width 0.2s;
+}
+nav ul li a:hover::before{
+width: 100%;
+}
+
